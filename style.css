@@ -1,0 +1,310 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* Primary */
+  --Purple: hsl(259, 100%, 65%);
+  --LightRed: hsl(0, 100%, 67%);
+  /* Neutral */
+  --White: hsl(0, 0%, 100%);
+  --OffWhite: hsl(0, 0%, 94%);
+  --LightGrey: hsl(0, 0%, 86%);
+  --SmokeyGrey: hsl(0, 1%, 44%);
+  --OffBlack: hsl(0, 0%, 8%);
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+body {
+  background-color: var(--OffWhite);
+  display: flex;
+  flex-direction: column;
+  margin: 7rem 0rem;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: auto;
+  height: auto;
+  padding: 1rem 0rem;
+  margin-inline: auto;
+  background-color: var(--White);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 100px;
+  padding: 0rem 2rem;
+}
+
+.form {
+  width: 500px;
+  height: 155px;
+  /* padding: 0rem 2rem; */
+  align-items: center;
+  /* background-color: aquamarine; */
+  /* border-bottom: 1px solid cyan; */
+}
+.form-inputs {
+  width: auto;
+  display: flex;
+  margin: 1rem 0rem 0rem 0rem;
+}
+.form-container input[type="number"] {
+  width: 120px;
+  height: 50px;
+  text-indent: 0rem;
+  color: var(--SmokeyGrey);
+  margin: 0.5rem 1rem 0rem 0rem;
+  font-weight: 700;
+  font-size: 26px;
+  border-radius: 5px;
+  padding: 0.5rem;
+  border: 1px solid var(--LightGrey);
+}
+
+.form-container input[type="number"]:focus {
+  outline: none;
+  border: 2.2px solid var(--Purple);
+}
+.form-container label {
+  display: block;
+  margin: 0.5rem 1rem 0rem 0rem;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--SmokeyGrey);
+}
+
+.form .btn-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0rem 0rem 0rem;
+}
+
+.form .btn-container .submit-btn {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--Purple);
+  position: absolute;
+  right: 8px;
+  top: -30px;
+  cursor: pointer;
+}
+.form .btn-container .line {
+  width: 90%;
+  border: 0.1px solid var(--LightGrey);
+}
+.output-container {
+  width: 100%;
+  margin: 0rem 0rem 2rem 0rem;
+  /* background-color: aqua; */
+}
+
+.output-container .output {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  font-size: 70px;
+  font-style: italic;
+  font-weight: 800;
+  /* background-color: aqua; */
+}
+.output-container .output .dash {
+  font-size: 90px;
+  margin: 0rem 0.5rem;
+  color: var(--Purple);
+}
+
+.error {
+  font-size: 12px;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 90%;
+  }
+  .form {
+    width: auto;
+    margin-top: 2rem;
+  }
+  .form-inputs {
+    width: auto;
+  }
+  .form-container {
+    width: auto;
+  }
+  .form-inputs {
+    width: auto;
+    display: flex;
+    margin: 0rem 0rem 0rem 0rem;
+  }
+  .form-container input[type="number"] {
+    width: 80px;
+    height: 50px;
+    text-indent: 0.2rem;
+    color: var(--SmokeyGrey);
+    margin: 0.5rem 0.5rem 0rem 0rem;
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 0rem;
+    border: 1px solid var(--LightGrey);
+  }
+  .form .btn-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 0rem 0rem 0rem;
+  }
+
+  .form .btn-container .submit-btn {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--Purple);
+    position: absolute;
+    left: 40%;
+    right: 50%;
+    top: -30px;
+    cursor: pointer;
+  }
+  .form .btn-container .line {
+    width: 100%;
+    border: 0.1px solid var(--LightGrey);
+  }
+  .output-container {
+    width: auto;
+    margin: 2rem 0rem 2rem 0rem;
+    /* background-color: aqua; */
+  }
+
+  .output-container .output {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    font-size: 50px;
+    font-style: italic;
+    font-weight: 800;
+    /* background-color: aqua; */
+  }
+  .output-container .output .dash {
+    font-size: 90px;
+    margin: 0rem 0.5rem;
+    color: var(--Purple);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 90%;
+    height: auto;
+    padding: 0rem 0rem;
+    margin-inline: auto;
+    background-color: var(--White);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 100px;
+    padding: 0rem 0.5rem;
+  }
+
+  .form {
+    width: auto;
+    height: auto;
+    /* padding: 0rem 2rem; */
+    align-items: center;
+    /* background-color: aquamarine; */
+    /* border-bottom: 1px solid cyan; */
+  }
+  .form-inputs {
+    width: auto;
+    display: flex;
+    margin: 0rem 0rem 0rem 0rem;
+  }
+  .form-container input[type="number"] {
+    width: 70%;
+    height: 50px;
+    text-indent: 0.2rem;
+    color: var(--SmokeyGrey);
+    margin: 0.5rem 0rem 0rem 0rem;
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 0.5rem;
+    border: 1px solid var(--LightGrey);
+  }
+
+  .form-container input[type="number"]:focus {
+    outline: none;
+    border: 2.2px solid var(--Purple);
+  }
+  .form-container label {
+    display: block;
+    margin: 0.5rem 1rem 0rem 0rem;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--SmokeyGrey);
+  }
+
+  .form .btn-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0rem 0rem 0rem;
+  }
+
+  .form .btn-container .submit-btn {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--Purple);
+    position: absolute;
+    right: 8px;
+    top: -30px;
+    cursor: pointer;
+  }
+  .form .btn-container .line {
+    width: 100%;
+    border: 0.1px solid var(--LightGrey);
+  }
+  .output-container {
+    width: 100%;
+    margin: 1rem 0rem 2rem 0rem;
+    /* background-color: aqua; */
+  }
+
+  .output-container .output {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    font-size: 50px;
+    font-style: italic;
+    font-weight: 800;
+    /* background-color: aqua; */
+  }
+  .output-container .output .dash {
+    font-size: 80px;
+    margin: 0rem 0.5rem;
+    color: var(--Purple);
+  }
+}
